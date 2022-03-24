@@ -1362,11 +1362,6 @@
 #         'provider' => 'files',
 #         'deny'     => 'from all',
 #       },
-#       { 'path'           => '/var/www/html',
-#         'provider'       => 'directory',
-#         'options'        => ['-Indexes'],
-#         'allow_override' => ['All'],
-#       },
 #     ],
 #   }
 #   ```
