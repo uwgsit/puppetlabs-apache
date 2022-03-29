@@ -29,7 +29,6 @@
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "6",
         "7",
         "8"
       ]
@@ -66,13 +65,18 @@
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "16.04",
         "18.04",
         "20.04"
       ]
     },
     {
       "operatingsystem": "Rocky",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "AlmaLinux",
       "operatingsystemrelease": [
         "8"
       ]
@@ -85,7 +89,7 @@
     }
   ],
   "description": "Module for Apache configuration",
-  "pdk-version": "2.1.0",
+  "pdk-version": "2.3.0",
   "template-url": "https://github.com/puppetlabs/pdk-templates.git#main",
-  "template-ref": "heads/main-0-g03daa92"
+  "template-ref": "heads/main-0-gf3911d3"
 }
