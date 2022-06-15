@@ -583,8 +583,8 @@ class apache (
   if $::osfamily != 'FreeBSD' {
     package { 'httpd':
       ensure => $package_ensure,
-      name   => $apache_name,
       # DEBUG 2_arctos_dupe_httpd_skylar2
+      # name   => $apache_name,
       # notify => Class['Apache::Service'],
     }
   }
