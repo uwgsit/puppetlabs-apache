@@ -581,12 +581,13 @@ class apache (
   # such that they include apache::package class (currently event.pp, itk.pp,
   # peruser.pp, prefork.pp, worker.pp).
   if $::osfamily != 'FreeBSD' {
-    package { 'httpd':
+    # DEBUG 2_arctos_dupe_httpd_skylar2
+    notify { "apache::init package_ensure = ${package_ensure} apache_name = ${apache_name}": }
+    #package { 'httpd':
       ensure => $package_ensure,
-      # DEBUG 2_arctos_dupe_httpd_skylar2
       # name   => $apache_name,
       # notify => Class['Apache::Service'],
-    }
+      #}
   }
 
   # declare the web server user and group
