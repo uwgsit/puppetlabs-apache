@@ -584,7 +584,7 @@ class apache (
     # DEBUG 2_arctos_dupe_httpd_skylar2
     notify { "apache::init package_ensure = ${package_ensure} apache_name = ${apache_name}": }
     #package { 'httpd':
-      ensure => $package_ensure,
+    #ensure => $package_ensure,
       # name   => $apache_name,
       # notify => Class['Apache::Service'],
       #}
